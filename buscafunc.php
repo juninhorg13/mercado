@@ -10,39 +10,21 @@
 
 <body>
 
-    <!--TOPO DO SITE COM MENU DE OPÇÕES-->
-    <div class="topo">
-        <h1>Busca Refinada de Funcionários - MercadoSystem</h1>
-        <p>Nesta seção será possível localizar dados de funcionários através da matrícula</p>
+<?php
 
+include('menu.html');
 
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="cadastroprod.php">Cadastrar produtos</a></li>
-                <li><a href="consultaprod.php">Consultar todos produtos</a></li>
-                <li><a href="buscaprod.php">Buscar produto</a></li>
-                <li><a href="#">Editar produtos</a></li>
-                <li><a href="#">Excluir produtos</a></li>
-                <li><a href="cadastrofunc.php">Cadastrar funcionários</a></li>
-                <li><a href="consultafunc.php">Consultar funcionários</a></li>
-                <li><a href="buscafunc.php">Buscar funcionario</a></li>
-                <li><a href="#">Editar funcionários</a></li>
-                <li><a href="#">Excluir funcionários</a></li>
-                <li>
-                    <a href="#"></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+?>
 
-    <form action="funcaobuscarfunc.php" method="post">
+    <form class="d-flex" action="funcaobuscarfunc.php" method="post">
         
         <input type="text" autocomplete="off" placeholder="Matrícula">
 
-        <input type="submit" value="Buscar funcionário">
+        <input class="btn btn-outline-primary" type="submit" value="Buscar funcionário">
 
     </form>
+
+<hr>
 
     <footer>
         <p>Projeto desenvolvido no Curso Técnico em Informática do SENAC 2022</p>
